@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: rgb(14, 14, 14);
+    color: white;
+}
+
+header{
+    margin-top: 20px;
+    position:sticky;
+    top: 0;
+    left: 0;    width: 100%;
+    height: 70px;
+    padding: 1rem 9%;
+    background-color: rgb(14, 14, 14);
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: transparent;
+    font-family: Arial;
+    margin-top: 10px;
+}
+
+
+.navbar a {
+    font-weight: 500;
+    transition: 0.3 ease;
+    float: left;
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 1.8rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    color: #0774ff;
+    border-bottom: 3px solid #0774ff;
+}
+
+nav a:hover,
+nav a.active{
+    color: #0774ff;
+    border-bottom: 3px solid #0774ff;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(14, 14, 14);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: transparent;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.video-track{
+    padding-left: 21.8%;
+    column-gap: 0px;
+}
+.mes-p{
+    display: block;
+    padding-left: 20%;
+}
+
+.mes-p h1{
+    column-gap: 0px;
+    font-size: 50px;
+    flex-direction: column-reverse;
+    padding-left: 21.07%;
+}
+
+span{
+    color: #b407ff;
+}
+
+.detail-1{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.detail-1 h4{
+    font-size: 90px;
+    position: absolute;
+    top: 44%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    color: white;
+    cursor: default;
+}
+
+.detail-1 h1{
+    font-size: 200px;
+    color: #0774ff;
+    position: absolute;
+    top: 21%;
+    left: 39%;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.detail-1 h1:hover{
+    transform: scale(1.1);
+    color: whitesmoke;
+    text-shadow: 3px 3px 3px #0774ff;
+}
+
+.img1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    padding-top: 50px;
+}
+
+.detail-2{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+  
+.detail-2 h4{
+    font-size: 90px;
+    position: absolute;
+    top: 44%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    color: white;
+    cursor: default;
+}
+  
+.detail-2 h1{
+    font-size: 200px;
+    color: #0774ff;
+    position: absolute;
+    top: 21%;
+    left: 40%;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.detail-2 h1:hover{
+    transform: scale(1.1);
+    color: whitesmoke;
+    text-shadow: 3px 3px 3px #0774ff;
+}
+  
+
+.detail-3{
+    position: relative;
+    text-align: center;
+    color: white;
+    transition: 0.5s ease;
+}
+  
+.detail-3 h4{
+    font-size: 90px;
+    position: absolute;
+    top: 44%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    cursor: default;
+}
+  
+.detail-3 h1{
+    font-size: 200px;
+    color: #0774ff;
+    position: absolute;
+    top: 21%;
+    left: 43%;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.detail-3 h1:hover{
+    transform: scale(1.1);
+    color: whitesmoke;
+    text-shadow: 3px 3px 3px #0774ff;
+}
+
+.banner{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    border: #2a52be;
+    border-radius: 50px;
+    width: 1080px;
+
+}
+
+.spotify-track{
+    padding-left: 21.8%;
+}
+
+.icon-contact{
+    display: flex;
+    gap: 5px;
+    padding-left: 46%;
+    cursor: pointer;
+}
+
+.footer {
+    padding: 50px; 
+    text-align: center; 
+    background: #363636; 
+}
+
+.privac a{
+    font-size: 20px;
+    color: rgb(177, 64, 19);
+}
+.privac a:hover{
+    font-size: 20px;
+    color: rgb(212, 107, 65);
+    border-bottom: 1px solid rgb(177, 64, 19);
+}

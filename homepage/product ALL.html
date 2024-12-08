@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT I DOXWITNU</title>
+    <link rel="stylesheet" href="productALL.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="product.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.0/dist/sweetalert2.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="homepage.html" class="logo">DOXWITNU</a>
+        <nav>
+            <div class="navbar">
+                <a href="homepage.html">HOME</a>
+                <a href="gallery.html">GALLERY</a>
+                <a href="product ALL.html" class="active">PRODUCT</a>
+            </div>
+        </nav>
+    </header>
+<br>
+    <div class="container">
+        <section>
+            <div class="search-box">
+                <i class="fa-sharp-duotone fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="searchInput" placeholder="Search" oninput="searchsomething(this)" />
+            </div>
+
+            <div class="shopping" onclick="openCart()">
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                <span class="quantity">0</span>
+            </div>
+        </section>
+    </div>
+    <section1>
+        <div id="productlist" class="product"></div>
+        <div id="modalDesc" class="modal" style="display: none;">
+            <div onclick="closeModal()" class="modal-bg"></div>
+            <div class="modal-page">
+                <h2>Detail</h2>
+                <div class="modalesc-content">
+                    <img id="mdd-img" class="modalesc-img" src="" alt="">
+                    <div class="modalesc-detail">
+                        <p id="mdd-name" style="font-size: 2vw;">Product name</p>
+                        <p id="mdd-price" style="font-size: 1.5vw;">1,090 THB</p>
+                        <p id="mdd-desc" style="color: rgb(82, 79, 79);">Description</p>
+                        <div class="btn-control">
+                            <button onclick="closeModal()" class="btn">Close</button>
+                            <button onclick="addtocart()" class="btn btn-buy">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="cartModal" class="modal" style="display: none;">
+            <div class="modal-bg"></div>
+            <div class="modal-page">
+                <h2>My cart</h2>
+                <div class="cartlist">
+                    <div class="cartlist-items">
+                        <div class="cartlist-left">
+                            <img src="c:\Users\Witasnu\Downloads\a-Photoroom (2).png" alt="">
+                            <div class="cartlist-detail">
+                                <p style="font-size: 1.5vw;">Product name</p>
+                                <p style="font-size: 1.2vw;">500 THB</p>
+                            </div>
+                        </div>
+                        <div class="cartlist-right">
+                            <p class="btnc">-</p>
+                            <p style="margin: 0 15px;">9</p>
+                            <p class="btnc">+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section1>
+</body>
+
+</html>
